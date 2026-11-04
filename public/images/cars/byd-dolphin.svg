@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <radialGradient id="dolphinBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.3" />
+      <stop offset="60%" stop-color="#0B132B" />
+      <stop offset="100%" stop-color="#050811" />
+    </radialGradient>
+    <linearGradient id="bodyDolphin" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="30%" stop-color="#0284C7" />
+      <stop offset="80%" stop-color="#075985" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#dolphinBg)" />
+  <ellipse cx="400" cy="385" rx="330" ry="35" fill="#00D2FF" fill-opacity="0.2" />
+  <line x1="100" y1="385" x2="700" y2="385" stroke="#38BDF8" stroke-opacity="0.3" stroke-width="2" />
+
+  <g transform="translate(40, 40)">
+    <rect width="130" height="28" rx="14" fill="#00D2FF" fill-opacity="0.1" stroke="#00D2FF" stroke-width="1" />
+    <text x="65" y="19" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#00D2FF" text-anchor="middle" letter-spacing="1.5">URBAN HATCHBACK</text>
+    <text x="0" y="65" font-family="'Segoe UI', sans-serif" font-size="36" font-weight="900" fill="#FFFFFF">BYD DOLPHIN</text>
+    <text x="0" y="85" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#38BDF8">Ocean Aesthetics • Range: 490 km • Blade Battery</text>
+  </g>
+
+  <!-- Dolphin Hatchback Silhouette -->
+  <g transform="translate(40, 30)">
+    <path d="M140 280 C155 240 210 215 285 200 C325 155 390 148 540 152 C585 155 620 180 640 220 L650 280 C655 305 640 315 620 315 L160 315 C145 315 135 300 140 280 Z" fill="url(#bodyDolphin)" />
+    
+    <!-- Greenhouse Hatchback Glass -->
+    <path d="M295 195 C335 155 400 152 535 155 C575 160 610 190 625 220 C520 205 400 200 295 195 Z" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5" />
+    <line x1="410" y1="153" x2="420" y2="200" stroke="#38BDF8" stroke-width="3" />
+
+    <!-- Headlight -->
+    <path d="M140 260 L180 255" stroke="#00F0FF" stroke-width="4" stroke-linecap="round" />
+    <!-- Taillight Geometric -->
+    <path d="M625 240 L645 255" stroke="#F43F5E" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Wheels -->
+    <g transform="translate(230, 315)">
+      <circle cx="0" cy="0" r="44" fill="#0F172A" stroke="#334155" stroke-width="3" />
+      <circle cx="0" cy="0" r="32" fill="#1E293B" />
+      <circle cx="0" cy="0" r="12" fill="#00D2FF" />
+    </g>
+    <g transform="translate(545, 315)">
+      <circle cx="0" cy="0" r="44" fill="#0F172A" stroke="#334155" stroke-width="3" />
+      <circle cx="0" cy="0" r="32" fill="#1E293B" />
+      <circle cx="0" cy="0" r="12" fill="#00D2FF" />
+    </g>
+  </g>
+</svg>

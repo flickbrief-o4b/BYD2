@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <radialGradient id="sealBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0F2B48" />
+      <stop offset="60%" stop-color="#0A1124" />
+      <stop offset="100%" stop-color="#050811" />
+    </radialGradient>
+    <linearGradient id="bodySeal" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#7DD3FC" />
+      <stop offset="20%" stop-color="#0284C7" />
+      <stop offset="60%" stop-color="#0369A1" />
+      <stop offset="100%" stop-color="#082F49" />
+    </linearGradient>
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#00D2FF" />
+    </linearGradient>
+    <radialGradient id="wheelGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="60%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#090D16" />
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#sealBg)" />
+
+  <!-- Studio Floor Grid & Reflection -->
+  <ellipse cx="400" cy="380" rx="350" ry="40" fill="#0284C7" fill-opacity="0.15" />
+  <line x1="80" y1="380" x2="720" y2="380" stroke="#00D2FF" stroke-opacity="0.3" stroke-width="2" />
+
+  <!-- Model Badge -->
+  <g transform="translate(40, 40)">
+    <rect width="130" height="28" rx="14" fill="#00D2FF" fill-opacity="0.1" stroke="#00D2FF" stroke-width="1" />
+    <text x="65" y="19" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#00D2FF" text-anchor="middle" letter-spacing="1.5">SPORT SEDAN</text>
+    <text x="0" y="65" font-family="'Segoe UI', sans-serif" font-size="36" font-weight="900" fill="#FFFFFF">BYD SEAL</text>
+    <text x="0" y="85" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#38BDF8">Performance AWD • 0-100 km/h: 3.8s</text>
+  </g>
+
+  <!-- Car Silhouette: BYD Seal fastback sedan -->
+  <g transform="translate(10, 30)">
+    <!-- Main Body Shape -->
+    <path d="M120 280 C150 250 220 230 320 210 C420 170 540 170 610 215 C660 230 710 255 725 280 C730 295 720 315 690 320 L150 320 C125 320 110 300 120 280 Z" fill="url(#bodySeal)" />
+
+    <!-- Sleek Aerodynamic Roof & Greenhouse -->
+    <path d="M280 215 C340 170 420 155 520 160 C570 165 620 185 640 220 C540 215 440 215 280 215 Z" fill="url(#glassGrad)" stroke="#38BDF8" stroke-width="1.5" />
+    
+    <!-- Window Pillars -->
+    <line x1="430" y1="160" x2="445" y2="215" stroke="#0F172A" stroke-width="4" />
+    <line x1="535" y1="163" x2="550" y2="215" stroke="#0F172A" stroke-width="4" />
+
+    <!-- Character Lines & Ocean Series Curves -->
+    <path d="M130 282 C220 260 380 255 680 265" stroke="#FFFFFF" stroke-opacity="0.5" stroke-width="2.5" />
+    <path d="M220 295 C330 288 500 288 640 298" stroke="#38BDF8" stroke-width="1.5" />
+
+    <!-- Headlight & Taillight Glow -->
+    <!-- Front C-shape LED -->
+    <path d="M125 275 Q150 282 170 280" stroke="#00F0FF" stroke-width="4" stroke-linecap="round" />
+    <circle cx="130" cy="275" r="3" fill="#FFFFFF" />
+    <!-- Rear Continuous Lightbar -->
+    <path d="M685 265 L720 273" stroke="#FF2A4D" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Front Wheel -->
+    <g transform="translate(230, 315)">
+      <circle cx="0" cy="0" r="46" fill="#0B0F19" stroke="#334155" stroke-width="3" />
+      <circle cx="0" cy="0" r="35" fill="url(#wheelGlow)" />
+      <circle cx="0" cy="0" r="14" fill="#0F172A" stroke="#38BDF8" stroke-width="2" />
+      <line x1="-35" y1="0" x2="35" y2="0" stroke="#94A3B8" stroke-width="3" />
+      <line x1="0" y1="-35" x2="0" y2="35" stroke="#94A3B8" stroke-width="3" />
+      <line x1="-25" y1="-25" x2="25" y2="25" stroke="#94A3B8" stroke-width="2.5" />
+      <line x1="-25" y1="25" x2="25" y2="-25" stroke="#94A3B8" stroke-width="2.5" />
+      <!-- Caliper -->
+      <path d="M10 -25 A25 25 0 0 1 25 -10" stroke="#00D2FF" stroke-width="5" fill="none" />
+    </g>
+
+    <!-- Rear Wheel -->
+    <g transform="translate(580, 315)">
+      <circle cx="0" cy="0" r="46" fill="#0B0F19" stroke="#334155" stroke-width="3" />
+      <circle cx="0" cy="0" r="35" fill="url(#wheelGlow)" />
+      <circle cx="0" cy="0" r="14" fill="#0F172A" stroke="#38BDF8" stroke-width="2" />
+      <line x1="-35" y1="0" x2="35" y2="0" stroke="#94A3B8" stroke-width="3" />
+      <line x1="0" y1="-35" x2="0" y2="35" stroke="#94A3B8" stroke-width="3" />
+      <line x1="-25" y1="-25" x2="25" y2="25" stroke="#94A3B8" stroke-width="2.5" />
+      <line x1="-25" y1="25" x2="25" y2="-25" stroke="#94A3B8" stroke-width="2.5" />
+      <!-- Caliper -->
+      <path d="M10 -25 A25 25 0 0 1 25 -10" stroke="#00D2FF" stroke-width="5" fill="none" />
+    </g>
+  </g>
+</svg>

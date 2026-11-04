@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none">
+  <defs>
+    <radialGradient id="slHero1" cx="80%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.4" />
+      <stop offset="60%" stop-color="#0B132B" />
+      <stop offset="100%" stop-color="#030712" />
+    </radialGradient>
+    <linearGradient id="glowLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D2FF" />
+      <stop offset="100%" stop-color="#2563EB" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="700" fill="url(#slHero1)" />
+
+  <!-- Speed light trails -->
+  <line x1="200" y1="520" x2="1500" y2="520" stroke="url(#glowLine)" stroke-width="2" stroke-opacity="0.4" />
+  <line x1="400" y1="550" x2="1550" y2="550" stroke="#00D2FF" stroke-width="1.5" stroke-opacity="0.6" stroke-dasharray="20 10" />
+  <line x1="600" y1="580" x2="1600" y2="580" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.3" />
+
+  <!-- Car Graphics Right Side -->
+  <g transform="translate(800, 200) scale(1.1)">
+    <!-- Aerodynamic Fastback Sedan Shadow -->
+    <ellipse cx="350" cy="280" rx="360" ry="25" fill="#0284C7" fill-opacity="0.25" />
+    <!-- Body -->
+    <path d="M60 210 C90 180 180 160 280 140 C400 90 530 90 620 145 C670 160 720 185 745 210 C755 225 740 245 710 250 L80 250 C60 250 50 230 60 210 Z" fill="#0284C7" />
+    <path d="M230 145 C300 95 400 85 520 90 C570 95 630 115 650 150 C540 145 420 145 230 145 Z" fill="#0B132B" stroke="#00D2FF" stroke-width="2" />
+    <!-- LED Glow -->
+    <path d="M65 205 L110 210" stroke="#00F0FF" stroke-width="5" stroke-linecap="round" />
+    <path d="M700 195 L740 205" stroke="#EF4444" stroke-width="5" stroke-linecap="round" />
+    <!-- Wheels -->
+    <circle cx="180" cy="250" r="42" fill="#0B0F19" stroke="#38BDF8" stroke-width="3" />
+    <circle cx="580" cy="250" r="42" fill="#0B0F19" stroke="#38BDF8" stroke-width="3" />
+  </g>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <radialGradient id="m6Bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1E3A8A" stop-opacity="0.4" />
+      <stop offset="60%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+    <linearGradient id="bodyM6" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#60A5FA" />
+      <stop offset="25%" stop-color="#2563EB" />
+      <stop offset="70%" stop-color="#1D4ED8" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#m6Bg)" />
+  <ellipse cx="400" cy="385" rx="350" ry="38" fill="#2563EB" fill-opacity="0.2" />
+  <line x1="80" y1="385" x2="720" y2="385" stroke="#60A5FA" stroke-opacity="0.3" stroke-width="2" />
+
+  <g transform="translate(40, 40)">
+    <rect width="130" height="28" rx="14" fill="#2563EB" fill-opacity="0.2" stroke="#60A5FA" stroke-width="1" />
+    <text x="65" y="19" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#60A5FA" text-anchor="middle" letter-spacing="1.5">FAMILY EV MPV</text>
+    <text x="0" y="65" font-family="'Segoe UI', sans-serif" font-size="36" font-weight="900" fill="#FFFFFF">BYD M6</text>
+    <text x="0" y="85" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#93C5FD">7-Seater Premium Comfort • Range: 530 km</text>
+  </g>
+
+  <!-- M6 Long Sleek MPV Silhouette -->
+  <g transform="translate(10, 25)">
+    <path d="M110 280 C130 235 180 205 270 190 C320 145 420 135 620 142 C675 146 720 175 735 240 C745 275 735 315 695 315 L135 315 C115 315 105 295 110 280 Z" fill="url(#bodyM6)" />
+
+    <!-- Window Glass Cabin -->
+    <path d="M280 185 C330 145 425 142 615 148 C655 155 700 185 715 220 C580 205 430 195 280 185 Z" fill="#0B132B" stroke="#93C5FD" stroke-width="1.5" />
+    <line x1="400" y1="145" x2="410" y2="198" stroke="#1E293B" stroke-width="4" />
+    <line x1="530" y1="146" x2="540" y2="204" stroke="#1E293B" stroke-width="4" />
+    <line x1="630" y1="149" x2="640" y2="212" stroke="#1E293B" stroke-width="4" />
+
+    <!-- Front Wing Chrome Accent -->
+    <path d="M115 255 Q160 260 200 252" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+    <!-- Rear Dynamic Light -->
+    <path d="M700 235 L725 245" stroke="#EF4444" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Wheels -->
+    <g transform="translate(215, 315)">
+      <circle cx="0" cy="0" r="48" fill="#0B0F19" stroke="#334155" stroke-width="3" />
+      <circle cx="0" cy="0" r="36" fill="#1E293B" />
+      <circle cx="0" cy="0" r="14" fill="#2563EB" />
+    </g>
+    <g transform="translate(605, 315)">
+      <circle cx="0" cy="0" r="48" fill="#0B0F19" stroke="#334155" stroke-width="3" />
+      <circle cx="0" cy="0" r="36" fill="#1E293B" />
+      <circle cx="0" cy="0" r="14" fill="#2563EB" />
+    </g>
+  </g>
+</svg>

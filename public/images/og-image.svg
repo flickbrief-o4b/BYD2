@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <radialGradient id="bgGlow" cx="70%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#0F2B48" />
+      <stop offset="50%" stop-color="#0B132B" />
+      <stop offset="100%" stop-color="#050811" />
+    </radialGradient>
+    <linearGradient id="neonBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D2FF" />
+      <stop offset="100%" stop-color="#0066FF" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGlow)" />
+  
+  <!-- Subtle futuristic grid lines -->
+  <path d="M0 500 L1200 500" stroke="#1E293B" stroke-width="1" />
+  <path d="M0 560 L1200 560" stroke="#1E293B" stroke-width="1" />
+  <path d="M200 0 L200 630" stroke="#1E293B" stroke-opacity="0.3" stroke-width="1" />
+  <path d="M1000 0 L1000 630" stroke="#1E293B" stroke-opacity="0.3" stroke-width="1" />
+  
+  <!-- Neon Accent line -->
+  <line x1="100" y1="120" x2="350" y2="120" stroke="url(#neonBlue)" stroke-width="5" stroke-linecap="round" />
+
+  <!-- Badge -->
+  <rect x="100" y="150" width="220" height="38" rx="19" fill="#00D2FF" fill-opacity="0.1" stroke="#00D2FF" stroke-width="1" />
+  <text x="210" y="174" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="700" fill="#00D2FF" text-anchor="middle" letter-spacing="2">OFFICIAL BYD SALES</text>
+
+  <!-- Titles -->
+  <text x="100" y="260" font-family="'Segoe UI', sans-serif" font-size="64" font-weight="900" fill="#FFFFFF">BYD MOBIL LISTRIK</text>
+  <text x="100" y="325" font-family="'Segoe UI', sans-serif" font-size="44" font-weight="700" fill="url(#neonBlue)">SEAL • ATTO 3 • DOLPHIN • M6</text>
+  <text x="100" y="380" font-family="'Segoe UI', sans-serif" font-size="24" font-weight="400" fill="#94A3B8">Promo Spesial DP Ringan, Bunga 0%, Free Wallbox Charger &amp; Test Drive ke Rumah Anda</text>
+
+  <!-- Footer bar -->
+  <rect x="100" y="440" width="400" height="60" rx="30" fill="url(#neonBlue)" />
+  <text x="300" y="478" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">KONSULTASI &amp; TEST DRIVE SEKARANG</text>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <radialGradient id="sl7Bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0E7490" stop-opacity="0.3" />
+      <stop offset="60%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+    <linearGradient id="bodySL7" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#22D3EE" />
+      <stop offset="30%" stop-color="#0891B2" />
+      <stop offset="80%" stop-color="#155E75" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#sl7Bg)" />
+  <ellipse cx="400" cy="385" rx="350" ry="38" fill="#0891B2" fill-opacity="0.2" />
+  <line x1="80" y1="385" x2="720" y2="385" stroke="#22D3EE" stroke-opacity="0.3" stroke-width="2" />
+
+  <g transform="translate(40, 40)">
+    <rect width="140" height="28" rx="14" fill="#0891B2" fill-opacity="0.2" stroke="#22D3EE" stroke-width="1" />
+    <text x="70" y="19" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#22D3EE" text-anchor="middle" letter-spacing="1.5">PERFORMANCE SUV</text>
+    <text x="0" y="65" font-family="'Segoe UI', sans-serif" font-size="36" font-weight="900" fill="#FFFFFF">BYD SEALION 7</text>
+    <text x="0" y="85" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#67E8F9">Fast Coupé SUV • 550 km • Ultra Fast Charging</text>
+  </g>
+
+  <!-- Sealion 7 Silhouette -->
+  <g transform="translate(15, 25)">
+    <path d="M115 280 C140 235 200 210 290 195 C350 148 450 140 600 152 C650 162 705 205 725 250 C735 280 730 315 695 315 L140 315 C120 315 110 295 115 280 Z" fill="url(#bodySL7)" />
+    <!-- Glass Greenhouse Coupe line -->
+    <path d="M295 190 C355 148 455 142 595 155 C640 170 685 210 700 235 C580 215 440 200 295 190 Z" fill="#042F2E" stroke="#22D3EE" stroke-width="1.5" />
+    <line x1="430" y1="145" x2="440" y2="202" stroke="#0F172A" stroke-width="4" />
+    <line x1="540" y1="150" x2="550" y2="208" stroke="#0F172A" stroke-width="4" />
+
+    <!-- Wheels -->
+    <g transform="translate(225, 315)">
+      <circle cx="0" cy="0" r="48" fill="#0B0F19" stroke="#334155" stroke-width="3" />
+      <circle cx="0" cy="0" r="36" fill="#164E63" />
+      <circle cx="0" cy="0" r="14" fill="#22D3EE" />
+    </g>
+    <g transform="translate(595, 315)">
+      <circle cx="0" cy="0" r="48" fill="#0B0F19" stroke="#334155" stroke-width="3" />
+      <circle cx="0" cy="0" r="36" fill="#164E63" />
+      <circle cx="0" cy="0" r="14" fill="#22D3EE" />
+    </g>
+  </g>
+</svg>

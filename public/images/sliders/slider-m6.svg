@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none">
+  <defs>
+    <radialGradient id="slHero2" cx="80%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#1E3A8A" stop-opacity="0.5" />
+      <stop offset="60%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="700" fill="url(#slHero2)" />
+
+  <!-- MPV Silhouette Graphic Right -->
+  <g transform="translate(820, 200) scale(1.05)">
+    <ellipse cx="350" cy="285" rx="360" ry="25" fill="#3B82F6" fill-opacity="0.2" />
+    <path d="M50 215 C80 170 140 140 250 120 C310 75 420 65 640 75 C700 80 750 110 765 175 C775 210 760 250 720 250 L80 250 C55 250 45 230 50 215 Z" fill="#1D4ED8" />
+    <path d="M255 115 C310 75 420 70 635 80 C680 90 730 120 745 160 C600 145 430 135 255 115 Z" fill="#0B132B" stroke="#60A5FA" stroke-width="2" />
+    <circle cx="170" cy="250" r="44" fill="#0B0F19" stroke="#60A5FA" stroke-width="3" />
+    <circle cx="610" cy="250" r="44" fill="#0B0F19" stroke="#60A5FA" stroke-width="3" />
+  </g>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <linearGradient id="bgSales" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="tieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D2FF" />
+      <stop offset="100%" stop-color="#0066FF" />
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="400" rx="32" fill="url(#bgSales)" />
+  
+  <!-- Subtle halo ring -->
+  <circle cx="200" cy="180" r="140" stroke="#00D2FF" stroke-width="2" stroke-opacity="0.3" stroke-dasharray="8 8" />
+
+  <!-- Person Vector: Professional Male Sales Consultant in Navy Suit -->
+  <!-- Suit Body -->
+  <path d="M100 400 L120 300 L170 240 L200 280 L230 240 L280 300 L300 400 Z" fill="#1E293B" stroke="#334155" stroke-width="2" />
+  
+  <!-- White Dress Shirt -->
+  <polygon points="175,245 225,245 200,310" fill="#F8FAFC" />
+
+  <!-- Modern Blue Tie -->
+  <polygon points="196,252 204,252 208,340 200,360 192,340" fill="url(#tieGrad)" />
+
+  <!-- Lapel Left & Right -->
+  <polygon points="170,240 200,320 185,320 150,260" fill="#0F172A" />
+  <polygon points="230,240 200,320 215,320 250,260" fill="#0F172A" />
+
+  <!-- BYD Brand Pin on Suit -->
+  <rect x="140" y="275" width="22" height="12" rx="6" fill="#00D2FF" stroke="#FFFFFF" stroke-width="1" />
+
+  <!-- Neck -->
+  <rect x="184" y="195" width="32" height="48" rx="6" fill="#FBBF24" fill-opacity="0.9" />
+
+  <!-- Head -->
+  <ellipse cx="200" cy="165" rx="55" ry="65" fill="#FDE68A" />
+
+  <!-- Professional Hair Cut -->
+  <path d="M142 160 C140 120 160 95 200 95 C240 95 260 120 258 160 C250 125 235 115 200 115 C165 115 150 125 142 160 Z" fill="#0F172A" />
+  <path d="M145 130 C165 105 235 105 255 130 C240 115 220 110 200 110 C180 110 160 115 145 130 Z" fill="#1E293B" />
+
+  <!-- Eyes & Eyebrows -->
+  <path d="M170 145 Q180 142 188 145" stroke="#334155" stroke-width="3" stroke-linecap="round" />
+  <path d="M212 145 Q220 142 230 145" stroke="#334155" stroke-width="3" stroke-linecap="round" />
+  <circle cx="179" cy="155" r="4" fill="#1E293B" />
+  <circle cx="221" cy="155" r="4" fill="#1E293B" />
+
+  <!-- Friendly Confident Smile -->
+  <path d="M185 188 Q200 202 215 188" stroke="#B45309" stroke-width="3" stroke-linecap="round" fill="none" />
+
+  <!-- Certified Badge Bottom -->
+  <g transform="translate(110, 345)">
+    <rect width="180" height="34" rx="17" fill="#0B132B" stroke="#00D2FF" stroke-width="1.5" />
+    <circle cx="22" cy="17" r="6" fill="#10B981" />
+    <text x="36" y="22" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="800" fill="#FFFFFF">VERIFIED SALES</text>
+  </g>
+</svg>

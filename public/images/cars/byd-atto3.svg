@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <radialGradient id="attoBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="60%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+    <linearGradient id="bodyAtto" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="25%" stop-color="#0284C7" />
+      <stop offset="70%" stop-color="#0369A1" />
+      <stop offset="100%" stop-color="#0C4A6E" />
+    </linearGradient>
+    <linearGradient id="glassAtto" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.85" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#attoBg)" />
+  <ellipse cx="400" cy="385" rx="350" ry="38" fill="#0369A1" fill-opacity="0.2" />
+  <line x1="80" y1="385" x2="720" y2="385" stroke="#38BDF8" stroke-opacity="0.3" stroke-width="2" />
+
+  <g transform="translate(40, 40)">
+    <rect width="110" height="28" rx="14" fill="#0284C7" fill-opacity="0.2" stroke="#38BDF8" stroke-width="1" />
+    <text x="55" y="19" font-family="'Segoe UI', sans-serif" font-size="12" font-weight="700" fill="#38BDF8" text-anchor="middle" letter-spacing="1.5">DYNAMIC SUV</text>
+    <text x="0" y="65" font-family="'Segoe UI', sans-serif" font-size="36" font-weight="900" fill="#FFFFFF">BYD ATTO 3</text>
+    <text x="0" y="85" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#7DD3FC">Extended Range • e-Platform 3.0 • 480 km</text>
+  </g>
+
+  <!-- Atto 3 SUV Body Profile -->
+  <g transform="translate(20, 20)">
+    <!-- Roof Rails -->
+    <path d="M310 135 L580 142" stroke="#94A3B8" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Main SUV Silhouette -->
+    <path d="M120 280 C135 240 180 220 280 200 C320 145 420 135 590 145 C640 150 675 190 710 240 C730 265 725 305 690 315 L140 315 C120 315 110 295 120 280 Z" fill="url(#bodyAtto)" />
+
+    <!-- Cladding -->
+    <path d="M115 305 C140 295 240 290 680 295 L690 315 L125 315 Z" fill="#0F172A" />
+
+    <!-- Greenhouse Windows -->
+    <path d="M290 195 C330 150 430 145 580 152 C615 158 640 190 660 215 C540 205 420 200 290 195 Z" fill="url(#glassAtto)" stroke="#7DD3FC" stroke-width="1.5" />
+    <line x1="420" y1="147" x2="430" y2="200" stroke="#0F172A" stroke-width="5" />
+    <line x1="530" y1="150" x2="540" y2="208" stroke="#0F172A" stroke-width="5" />
+
+    <!-- Front LED Light Bar -->
+    <path d="M118 260 C150 262 180 258 200 255" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+    <!-- Rear light -->
+    <path d="M680 235 L705 245" stroke="#EF4444" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Wheel 1 -->
+    <g transform="translate(225, 315)">
+      <circle cx="0" cy="0" r="48" fill="#0F172A" stroke="#334155" stroke-width="3" />
+      <circle cx="0" cy="0" r="37" fill="#1E293B" />
+      <circle cx="0" cy="0" r="14" fill="#0284C7" />
+      <line x1="-37" y1="0" x2="37" y2="0" stroke="#E2E8F0" stroke-width="3.5" />
+      <line x1="0" y1="-37" x2="0" y2="37" stroke="#E2E8F0" stroke-width="3.5" />
+    </g>
+
+    <!-- Wheel 2 -->
+    <g transform="translate(585, 315)">
+      <circle cx="0" cy="0" r="48" fill="#0F172A" stroke="#334155" stroke-width="3" />
+      <circle cx="0" cy="0" r="37" fill="#1E293B" />
+      <circle cx="0" cy="0" r="14" fill="#0284C7" />
+      <line x1="-37" y1="0" x2="37" y2="0" stroke="#E2E8F0" stroke-width="3.5" />
+      <line x1="0" y1="-37" x2="0" y2="37" stroke="#E2E8F0" stroke-width="3.5" />
+    </g>
+  </g>
+</svg>

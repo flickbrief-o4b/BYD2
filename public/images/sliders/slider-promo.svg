@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none">
+  <defs>
+    <radialGradient id="slHero3" cx="70%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="700" fill="url(#slHero3)" />
+  
+  <!-- Big Promo Visual Graphic Right -->
+  <g transform="translate(950, 160)">
+    <!-- Glowing Ring -->
+    <circle cx="250" cy="180" r="170" stroke="#00D2FF" stroke-width="2" stroke-dasharray="10 6" stroke-opacity="0.5" />
+    <circle cx="250" cy="180" r="140" fill="#0284C7" fill-opacity="0.1" stroke="#38BDF8" stroke-width="1.5" />
+
+    <!-- Big 0% / EV Badge -->
+    <text x="250" y="165" font-family="'Segoe UI', sans-serif" font-size="82" font-weight="900" fill="#00D2FF" text-anchor="middle">0%</text>
+    <text x="250" y="210" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">BUNGA KREDIT</text>
+    <text x="250" y="235" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#94A3B8" text-anchor="middle">TENOR HINGGA 5 TAHUN</text>
+
+    <!-- Floating Mini Badges -->
+    <g transform="translate(40, 50)">
+      <rect width="160" height="42" rx="21" fill="#0B132B" stroke="#10B981" stroke-width="1.5" />
+      <text x="80" y="26" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#10B981" text-anchor="middle">FREE WALLBOX</text>
+    </g>
+
+    <g transform="translate(300, 260)">
+      <rect width="170" height="42" rx="21" fill="#0B132B" stroke="#F59E0B" stroke-width="1.5" />
+      <text x="85" y="26" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="700" fill="#F59E0B" text-anchor="middle">GARANSI 8 TAHUN</text>
+    </g>
+  </g>
+</svg>
