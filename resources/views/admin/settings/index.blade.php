@@ -93,11 +93,18 @@
 
     <!-- 2. SEO & META DETAILS -->
     <div class="admin-card rounded-2xl p-6 sm:p-8 space-y-5">
-        <div class="border-b border-slate-800 pb-3">
-            <h3 class="text-base font-bold text-white flex items-center">
-                <i class="fa-solid fa-magnifying-glass text-cyan-400 mr-2.5"></i>
-                SEO &amp; Meta Title
-            </h3>
+        <div class="border-b border-slate-800 pb-3 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+                <h3 class="text-base font-bold text-white flex items-center">
+                    <i class="fa-solid fa-magnifying-glass text-cyan-400 mr-2.5"></i>
+                    SEO &amp; Meta Title
+                </h3>
+            </div>
+            <a href="{{ route('admin.seo.index') }}" 
+               class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-xs font-bold text-cyan-400 hover:bg-cyan-500/20 transition-colors">
+                <span>Buka Menu Lengkap SEO</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
         </div>
 
         <div class="grid grid-cols-1 gap-4">

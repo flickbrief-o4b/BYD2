@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\InquiryController;
 use App\Http\Controllers\Admin\NewsArticleController;
 use App\Http\Controllers\Admin\PromoController;
 use App\Http\Controllers\Admin\SalesProfileController;
+use App\Http\Controllers\Admin\SeoController;
 use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
@@ -21,6 +22,8 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/model/{slug}', [HomeController::class, 'modelDetail'])->name('model.detail');
 Route::get('/berita/{slug}', [HomeController::class, 'newsDetail'])->name('news.detail');
 Route::post('/inquiry', [HomeController::class, 'storeInquiry'])->name('inquiry.store');
+Route::get('/sitemap.xml', [HomeController::class, 'sitemap'])->name('sitemap');
+Route::get('/robots.txt', [HomeController::class, 'robots'])->name('robots');
 
 /*
 |--------------------------------------------------------------------------
@@ -43,6 +46,10 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     // General Settings (Logo, Favicon, OG Graph, Dealer & Contact info, Maps)
     Route::get('/settings', [SettingController::class, 'index'])->name('settings.index');
     Route::post('/settings', [SettingController::class, 'update'])->name('settings.update');
+
+    // SEO & Meta Tags Management
+    Route::get('/seo', [SeoController::class, 'index'])->name('seo.index');
+    Route::post('/seo', [SeoController::class, 'update'])->name('seo.update');
 
     // Sales Profile Management
     Route::get('/sales-profile', [SalesProfileController::class, 'edit'])->name('sales.edit');

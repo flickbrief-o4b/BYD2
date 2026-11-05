@@ -128,7 +128,13 @@
                 <a href="{{ route('admin.settings.index') }}" 
                    class="flex items-center space-x-3 px-3 py-2.5 rounded-xl transition-colors {{ request()->routeIs('admin.settings.*') ? 'bg-cyan-500/10 text-cyan-400 border border-cyan-500/30' : 'text-slate-400 hover:text-white hover:bg-slate-900' }}">
                     <i class="fa-solid fa-sliders w-5 text-center"></i>
-                    <span>Logo, Favicon &amp; OG Graph</span>
+                    <span>Logo, Favicon &amp; Branding</span>
+                </a>
+
+                <a href="{{ route('admin.seo.index') }}" 
+                   class="flex items-center space-x-3 px-3 py-2.5 rounded-xl transition-colors {{ request()->routeIs('admin.seo.*') ? 'bg-cyan-500/10 text-cyan-400 border border-cyan-500/30' : 'text-slate-400 hover:text-white hover:bg-slate-900' }}">
+                    <i class="fa-solid fa-magnifying-glass-chart w-5 text-center"></i>
+                    <span>SEO &amp; Meta Tags</span>
                 </a>
             </nav>
         </div>

@@ -9,21 +9,71 @@
     <meta name="description" content="@yield('meta_description', $settings['meta_description'] ?? 'Dealer Resmi Mobil Listrik BYD Indonesia. Informasi spesifikasi, harga OTR, promo DP murah, bunga 0%, dan booking test drive.')">
     <meta name="keywords" content="{{ $settings['meta_keywords'] ?? 'BYD, BYD Indonesia, Mobil Listrik, BYD Seal, BYD Atto 3, BYD Dolphin, BYD M6' }}">
     <meta name="author" content="{{ $salesProfile?->name ?? 'BYD Sales Specialist' }}">
+    <meta name="robots" content="{{ $settings['seo_robots'] ?? 'index, follow' }}">
+    <link rel="canonical" href="{{ $settings['seo_canonical_url'] ?? url()->current() }}">
+
+    @if(!empty($settings['google_site_verification']))
+    <meta name="google-site-verification" content="{{ $settings['google_site_verification'] }}">
+    @endif
+    @if(!empty($settings['bing_site_verification']))
+    <meta name="msvalidate.01" content="{{ $settings['bing_site_verification'] }}">
+    @endif
 
     <!-- Open Graph / Facebook / WhatsApp Preview -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="@yield('og_title', $settings['site_title'] ?? 'BYD Sales Indonesia')">
-    <meta property="og:description" content="@yield('og_description', $settings['meta_description'] ?? 'Informasi harga, promo DP ringan, bunga 0%, dan booking test drive unit BYD.')">
+    <meta property="og:title" content="@yield('og_title', $settings['og_title'] ?? ($settings['site_title'] ?? 'BYD Sales Indonesia'))">
+    <meta property="og:description" content="@yield('og_description', $settings['og_description'] ?? ($settings['meta_description'] ?? 'Informasi harga, promo DP ringan, bunga 0%, dan booking test drive unit BYD.'))">
     <meta property="og:image" content="{{ asset($settings['og_image_path'] ?? 'images/og-image.svg') }}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('og_title', $settings['site_title'] ?? 'BYD Sales Indonesia')">
-    <meta name="twitter:description" content="@yield('og_description', $settings['meta_description'] ?? 'Informasi harga, promo DP ringan, bunga 0%, dan booking test drive unit BYD.')">
+    <meta name="twitter:card" content="{{ $settings['twitter_card'] ?? 'summary_large_image' }}">
+    @if(!empty($settings['twitter_site']))
+    <meta name="twitter:site" content="{{ $settings['twitter_site'] }}">
+    @endif
+    <meta name="twitter:title" content="@yield('og_title', $settings['og_title'] ?? ($settings['site_title'] ?? 'BYD Sales Indonesia'))">
+    <meta name="twitter:description" content="@yield('og_description', $settings['og_description'] ?? ($settings['meta_description'] ?? 'Informasi harga, promo DP ringan, bunga 0%, dan booking test drive unit BYD.'))">
     <meta name="twitter:image" content="{{ asset($settings['og_image_path'] ?? 'images/og-image.svg') }}">
+
+    <!-- Google Analytics 4 (GA4) -->
+    @if(!empty($settings['google_analytics_id']))
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ $settings['google_analytics_id'] }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ $settings['google_analytics_id'] }}');
+    </script>
+    @endif
+
+    <!-- Google Tag Manager (GTM) -->
+    @if(!empty($settings['gtm_container_id']))
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','{{ $settings['gtm_container_id'] }}');</script>
+    @endif
+
+    <!-- Meta / Facebook Pixel -->
+    @if(!empty($settings['meta_pixel_id']))
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '{{ $settings['meta_pixel_id'] }}');
+        fbq('track', 'PageView');
+    </script>
+    @endif
+
+    {!! $settings['custom_header_scripts'] ?? '' !!}
 
     <!-- Dynamic Favicon -->
     <link rel="icon" type="image/svg+xml" href="{{ asset($settings['favicon_path'] ?? 'images/favicon.svg') }}">
@@ -351,5 +401,6 @@
     </div>
 
     @stack('scripts')
+    {!! $settings['custom_footer_scripts'] ?? '' !!}
 </body>
 </html>

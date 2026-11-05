@@ -110,4 +110,34 @@ class HomeController extends Controller
 
         return redirect()->away($waUrl);
     }
+
+    public function sitemap()
+    {
+        $cars = CarModel::where('is_active', true)->get();
+        $articles = NewsArticle::where('is_published', true)->get();
+
+        $content = view('sitemap', compact('cars', 'articles'))->render();
+
+        return response($content, 200)
+            ->header('Content-Type', 'text/xml');
+    }
+
+    public function robots()
+    {
+        $robotsSetting = Setting::get('seo_robots', 'index, follow');
+        $sitemapUrl = route('sitemap');
+
+        $content = "User-agent: *\n";
+        if (str_contains($robotsSetting, 'noindex')) {
+            $content .= "Disallow: /\n";
+        } else {
+            $content .= "Allow: /\n";
+            $content .= "Disallow: /admin\n";
+            $content .= "Disallow: /admin/\n";
+        }
+        $content .= "\nSitemap: {$sitemapUrl}\n";
+
+        return response($content, 200)
+            ->header('Content-Type', 'text/plain');
+    }
 }
