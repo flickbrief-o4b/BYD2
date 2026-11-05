@@ -193,7 +193,6 @@
                 <!-- Desktop Navlinks -->
                 <nav class="hidden lg:flex items-center space-x-8 text-sm font-semibold">
                     <a href="{{ route('home') }}#hero" class="text-slate-300 hover:text-cyan-400 transition-colors">Beranda</a>
-                    <a href="{{ route('home') }}#sales-profile" class="text-slate-300 hover:text-cyan-400 transition-colors">Profil Sales</a>
                     <a href="{{ route('home') }}#cars" class="text-slate-300 hover:text-cyan-400 transition-colors">Model &amp; Varian</a>
                     <a href="{{ route('home') }}#simulasi" class="text-slate-300 hover:text-cyan-400 transition-colors">Simulasi Kredit</a>
                     <a href="{{ route('home') }}#promos" class="text-slate-300 hover:text-cyan-400 transition-colors">Promo Spesial</a>
@@ -248,7 +247,6 @@
              class="lg:hidden glass-nav border-b border-cyan-500/20 px-6 py-6 space-y-4" 
              style="display: none;">
             <a href="{{ route('home') }}#hero" @click="mobileMenu = false" class="block text-slate-200 hover:text-cyan-400 text-base font-semibold py-1">Beranda</a>
-            <a href="{{ route('home') }}#sales-profile" @click="mobileMenu = false" class="block text-slate-200 hover:text-cyan-400 text-base font-semibold py-1">Profil Sales</a>
             <a href="{{ route('home') }}#cars" @click="mobileMenu = false" class="block text-slate-200 hover:text-cyan-400 text-base font-semibold py-1">Model &amp; Varian</a>
             <a href="{{ route('home') }}#simulasi" @click="mobileMenu = false" class="block text-slate-200 hover:text-cyan-400 text-base font-semibold py-1">Simulasi Kredit</a>
             <a href="{{ route('home') }}#promos" @click="mobileMenu = false" class="block text-slate-200 hover:text-cyan-400 text-base font-semibold py-1">Promo Spesial</a>
