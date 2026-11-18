@@ -76,8 +76,8 @@
                         <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500">
                             <i class="fa-regular fa-envelope"></i>
                         </span>
-                        <input type="email" name="email" value="{{ old('email', 'admin@byd-sales.com') }}" required autofocus
-                               placeholder="admin@byd-sales.com"
+                        <input type="email" name="email" value="{{ old('email') }}" required autofocus
+                               placeholder="admin@example.com"
                                class="w-full pl-11 pr-4 py-3.5 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 text-sm focus:border-cyan-400 focus:outline-none">
                     </div>
                 </div>
@@ -91,7 +91,7 @@
                         <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500">
                             <i class="fa-solid fa-lock"></i>
                         </span>
-                        <input type="password" name="password" value="password123" required
+                        <input type="password" name="password" required
                                placeholder="••••••••"
                                class="w-full pl-11 pr-4 py-3.5 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 text-sm focus:border-cyan-400 focus:outline-none">
                     </div>
@@ -100,7 +100,7 @@
                 <!-- Remember Me -->
                 <div class="flex items-center justify-between text-xs text-slate-400 pt-1">
                     <label class="flex items-center space-x-2 cursor-pointer">
-                        <input type="checkbox" name="remember" checked class="rounded bg-slate-900 border-slate-700 text-cyan-500 focus:ring-0">
+                        <input type="checkbox" name="remember" class="rounded bg-slate-900 border-slate-700 text-cyan-500 focus:ring-0">
                         <span>Ingat Sesi Saya</span>
                     </label>
                 </div>
@@ -112,15 +112,6 @@
                     Masuk ke Dashboard
                 </button>
             </form>
-
-            <!-- Quick Demo Credential Pill -->
-            <div class="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 text-xs text-slate-400 space-y-1">
-                <p class="font-bold text-cyan-400 flex items-center">
-                    <i class="fa-solid fa-circle-info mr-1.5"></i> Akun Demo Default:
-                </p>
-                <p>Email: <span class="text-white font-mono">admin@byd-sales.com</span></p>
-                <p>Password: <span class="text-white font-mono">password123</span></p>
-            </div>
 
             <div class="text-center pt-2">
                 <a href="{{ route('home') }}" class="text-xs text-slate-400 hover:text-cyan-400 transition-colors">

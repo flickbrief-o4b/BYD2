@@ -168,11 +168,6 @@
                     <i class="fa-solid fa-phone mr-1.5 text-cyan-400 text-xs"></i>
                     <span>{{ $salesProfile?->phone ?? $settings['dealer_phone'] ?? '+62 812-8899-7722' }}</span>
                 </a>
-                <span class="text-slate-700">|</span>
-                <a href="{{ route('admin.login') }}" class="hover:text-cyan-400 transition-colors flex items-center text-slate-400">
-                    <i class="fa-solid fa-lock mr-1.5 text-xs text-cyan-500"></i>
-                    <span>Admin Portal</span>
-                </a>
             </div>
         </div>
     </div>
@@ -370,9 +365,6 @@
                 <p>&copy; {{ date('Y') }} {{ $settings['dealer_name'] ?? 'BYD Sales Indonesia' }}. All rights reserved.</p>
                 <div class="flex items-center space-x-6">
                     <span class="text-slate-600">Teknologi Blade Battery &bull; e-Platform 3.0</span>
-                    <a href="{{ route('admin.login') }}" class="text-slate-400 hover:text-cyan-400 flex items-center transition-colors">
-                        <i class="fa-solid fa-gear mr-1.5 text-xs"></i> Admin Login
-                    </a>
                 </div>
             </div>
         </div>
